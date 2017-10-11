@@ -2,6 +2,12 @@
 
 This repository has the Anna smart contracts based on
 
+# Infos
+
+Anna Crowdsale : `0x76a71cf3d8e12ddcac82405bc5efae670b2df869`
+Anna Coin      : `0xb62f0e3fe8cdf89c7fd655744aa3e6614027ce0f`
+
+
 # Manual testing
 
 Get an account, token and crowdsale
@@ -54,3 +60,8 @@ Change ropsten to live for real deploy
 
     truffle migrate --network ropsten
     truffle exec infos.js --network ropsten
+
+
+For live network, had to skip non submitting Migrations from truffle / Open Zeppelin
+
+    truffle migrate -f 2 --network live
