@@ -5,7 +5,7 @@ module.exports = function(callback) {
     var AnnaCoin = artifacts.require("./AnnaCoin.sol");
 
 
-        var anna_crowdsale;
+    var anna_crowdsale;
     var anna_coin_instance;
 
     AnnaCrowdsale.deployed().then(function(instance) {

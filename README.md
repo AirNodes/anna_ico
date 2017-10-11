@@ -36,7 +36,13 @@ First, start geth on the right network (change the port for live network)
 
     geth --testnet --rpc --rpcapi db,eth,net,web3,personal
 
+/!\ Live
+
+    geth --rpc --rpcapi db,eth,net,web3,personal --networkid 1 --rpcport 8546
+
 ## Unlock accounts
+
+Change ropsten to live for real deploy
 
     truffle console --network ropsten
 
